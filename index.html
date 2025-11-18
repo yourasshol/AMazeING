@@ -11,21 +11,24 @@
     <header class="header">
       <h1>AMazeING</h1>
       <div class="controls">
-        <button id="resetBtn">New Maze</button>
-        <button id="pathBtn">Show Path</button>
-        <select id="sizeSelect">
-          <option value="15">Small</option>
-          <option value="20" selected>Medium</option>
-          <option value="30">Large</option>
-        </select>
+        <button id="resetBtn" title="Generate a new maze">New Maze</button>
+        <button id="pathBtn" title="Show or hide shortest path">Show Path</button>
+        <label class="select-label">
+          <span>Size:</span>
+          <select id="sizeSelect" title="Maze size">
+            <option value="15">Small (15x15)</option>
+            <option value="20" selected>Medium (20x20)</option>
+            <option value="30">Large (30x30)</option>
+          </select>
+        </label>
       </div>
     </header>
 
-    <canvas id="game" width="600" height="600"></canvas>
+    <canvas id="game" width="600" height="600" aria-label="AMazeING game board"></canvas>
 
     <div class="help">
       <p><strong>Controls:</strong> Arrow keys or WASD</p>
-      <p>Find the exit in the maze while avoiding the red cube!</p>
+      <p>Reach the green goal, avoid the red chaser. Path shows shortest route.</p>
     </div>
   </div>
 
