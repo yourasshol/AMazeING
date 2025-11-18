@@ -10,14 +10,22 @@
   <div class="container">
     <header class="header">
       <h1>AMazeING</h1>
-      <button id="resetBtn">New Maze</button>
+      <div class="controls">
+        <button id="resetBtn">New Maze</button>
+        <button id="pathBtn">Show Path</button>
+        <select id="sizeSelect">
+          <option value="15">Small</option>
+          <option value="20" selected>Medium</option>
+          <option value="30">Large</option>
+        </select>
+      </div>
     </header>
 
     <canvas id="game" width="600" height="600"></canvas>
 
     <div class="help">
       <p><strong>Controls:</strong> Arrow keys or WASD</p>
-      <p>Find the exit in the maze!</p>
+      <p>Find the exit in the maze while avoiding the red cube!</p>
     </div>
   </div>
 
