@@ -1,137 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AMazeING - Maze Game</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AMazeING</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <div class="game-container">
-        <h1>AMazeING</h1>
-        <div class="maze">
-            <!-- Row 1 -->
-            <div class="cell start"></div>
-            <div class="cell wall"></div>
-            <div class="cell wall"></div>
-            <div class="cell wall"></div>
-            <div class="cell"></div>
-            <div class="cell"></div>
-            <div class="cell wall"></div>
-            <div class="cell wall"></div>
-            <div class="cell"></div>
-            <div class="cell end"></div>
+  <div class="container">
+    <header class="header">
+      <h1>AMazeING</h1>
+      <button id="resetBtn">New Maze</button>
+    </header>
 
-            <!-- Row 2 -->
-            <div class="cell"></div>
-            <div class="cell wall"></div>
-            <div class="cell"></div>
-            <div class="cell"></div>
-            <div class="cell wall"></div>
-            <div class="cell wall"></div>
-            <div class="cell"></div>
-            <div class="cell wall"></div>
-            <div class="cell wall"></div>
-            <div class="cell"></div>
+    <canvas id="game" width="600" height="600"></canvas>
 
-            <!-- Row 3 -->
-            <div class="cell"></div>
-            <div class="cell wall"></div>
-            <div class="cell wall"></div>
-            <div class="cell"></div>
-            <div class="cell wall"></div>
-            <div class="cell"></div>
-            <div class="cell wall"></div>
-            <div class="cell"></div>
-            <div class="cell wall"></div>
-            <div class="cell"></div>
-
-            <!-- Row 4 -->
-            <div class="cell wall"></div>
-            <div class="cell"></div>
-            <div class="cell"></div>
-            <div class="cell wall"></div>
-            <div class="cell wall"></div>
-            <div class="cell"></div>
-            <div class="cell wall"></div>
-            <div class="cell"></div>
-            <div class="cell wall"></div>
-            <div class="cell"></div>
-
-            <!-- Row 5 -->
-            <div class="cell wall"></div>
-            <div class="cell"></div>
-            <div class="cell wall"></div>
-            <div class="cell"></div>
-            <div class="cell wall"></div>
-            <div class="cell"></div>
-            <div class="cell wall"></div>
-            <div class="cell wall"></div>
-            <div class="cell wall"></div>
-            <div class="cell"></div>
-
-            <!-- Row 6 -->
-            <div class="cell"></div>
-            <div class="cell wall"></div>
-            <div class="cell wall"></div>
-            <div class="cell"></div>
-            <div class="cell"></div>
-            <div class="cell wall"></div>
-            <div class="cell wall"></div>
-            <div class="cell wall"></div>
-            <div class="cell"></div>
-            <div class="cell"></div>
-
-            <!-- Row 7 -->
-            <div class="cell wall"></div>
-            <div class="cell wall"></div>
-            <div class="cell wall"></div>
-            <div class="cell wall"></div>
-            <div class="cell"></div>
-            <div class="cell wall"></div>
-            <div class="cell wall"></div>
-            <div class="cell"></div>
-            <div class="cell"></div>
-            <div class="cell"></div>
-
-            <!-- Row 8 -->
-            <div class="cell wall"></div>
-            <div class="cell wall"></div>
-            <div class="cell"></div>
-            <div class="cell wall"></div>
-            <div class="cell wall"></div>
-            <div class="cell wall"></div>
-            <div class="cell wall"></div>
-            <div class="cell"></div>
-            <div class="cell wall"></div>
-            <div class="cell"></div>
-
-            <!-- Row 9 -->
-            <div class="cell wall"></div>
-            <div class="cell"></div>
-            <div class="cell wall"></div>
-            <div class="cell"></div>
-            <div class="cell wall"></div>
-            <div class="cell"></div>
-            <div class="cell wall"></div>
-            <div class="cell"></div>
-            <div class="cell wall"></div>
-            <div class="cell wall"></div>
-
-            <!-- Row 10 -->
-            <div class="cell"></div>
-            <div class="cell"></div>
-            <div class="cell"></div>
-            <div class="cell wall"></div>
-            <div class="cell wall"></div>
-            <div class="cell"></div>
-            <div class="cell"></div>
-            <div class="cell wall"></div>
-            <div class="cell"></div>
-            <div class="cell end"></div>
-        </div>
+    <div class="help">
+      <p><strong>Controls:</strong> Arrow keys or WASD</p>
+      <p>Find the exit in the maze!</p>
     </div>
+  </div>
 
-    <script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
